@@ -1,0 +1,14 @@
+name: tmp_path
+description: Generate a unique path in system temp directory.
+version: 1.0.0
+homepage: https://github.com/flutter-cavalry/tmp_path
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dev_dependencies:
+  mgenware_dart_lints: ^2.1.0
+  test: ^1.16.0
+dependencies:
+  path: ^1.8.3
+  uuid: ^3.0.7
