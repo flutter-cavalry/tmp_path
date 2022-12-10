@@ -3,7 +3,7 @@
 [![pub package](https://img.shields.io/pub/v/tmp_path.svg)](https://pub.dev/packages/tmp_path)
 [![Build Status](https://github.com/flutter-cavalry/tmp_path/workflows/Build/badge.svg)](https://github.com/flutter-cavalry/tmp_path/actions)
 
-Generate a unique path in system temp directory.
+Generate a unique path in system temp directory. You can use it to create a temporary file or directory.
 
 ## Usage
 
