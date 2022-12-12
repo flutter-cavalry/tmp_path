@@ -7,5 +7,6 @@ var uuid = Uuid();
 String tmpPath({String prefix = ''}) {
   var tmp = Directory.systemTemp.path;
   var uid = uuid.v4().replaceAll('-', '');
-  return p.join(tmp, '${prefix.isEmpty ? 'tmp' : prefix}_$uid');
+  return p.join(tmp,
+      '${prefix.isEmpty ? 'tmp' : prefix}_${uid}_${DateTime.now().millisecondsSinceEpoch}');
 }
