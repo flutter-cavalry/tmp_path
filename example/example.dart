@@ -8,4 +8,7 @@ void main() {
 
   print(tmpPath(prefix: 'test'));
   // /var/folders/q5/yvcxrtbn7mq5h4r4zvjhp_v40000gn/T/test_9a2895c181e94602912abe32b7eafed1
+
+  print(tmpPath(parentDirectory: '/a/b/c'));
+  // /a/b/c/tmp_c7ad03d6667044369cdf9d313f48ae98_1675502458003
 }
