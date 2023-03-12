@@ -4,9 +4,14 @@ import 'package:uuid/uuid.dart';
 
 var uuid = Uuid();
 
+/// Returns a temporary file name.
+String tmpFileName() {
+  return '${uuid.v4().replaceAll('-', '')}_${DateTime.now().millisecondsSinceEpoch}';
+}
+
+/// Returns a temporary path. You can use that to create a temporary file or directory.
 String tmpPath({String prefix = '', String? parentDirectory}) {
   var parent = parentDirectory ?? Directory.systemTemp.path;
-  var name =
-      '${uuid.v4().replaceAll('-', '')}_${DateTime.now().millisecondsSinceEpoch}';
-  return p.join(parent, '${prefix.isEmpty ? 'tmp' : prefix}_$name');
+  var tmpName = tmpFileName();
+  return p.join(parent, '${prefix.isEmpty ? 'tmp' : prefix}_$tmpName');
 }
