@@ -4,11 +4,11 @@ import 'package:tmp_path/src/tmp_path.dart';
 
 void main() {
   print(tmpPath());
-  // /var/folders/q5/yvcxrtbn7mq5h4r4zvjhp_v40000gn/T/tmp_9c2dd26b67184afcb6d25bad068726c5
+  // /var/folders/q5/yvcxrtbn7mq5h4r4zvjhp_v40000gn/T/e8d9cbbcc1944c32a68d3d3739618dcb1679847188986
 
   print(tmpPath(prefix: 'test'));
-  // /var/folders/q5/yvcxrtbn7mq5h4r4zvjhp_v40000gn/T/test_9a2895c181e94602912abe32b7eafed1
+  // /var/folders/q5/yvcxrtbn7mq5h4r4zvjhp_v40000gn/T/test399b42ececa84e069cf582b0adf1cea61679847188991
 
   print(tmpPath(parentDirectory: '/a/b/c'));
-  // /a/b/c/tmp_c7ad03d6667044369cdf9d313f48ae98_1675502458003
+  // /a/b/c/30937c061c944d059dfc298242ef1e211679847188991
 }
