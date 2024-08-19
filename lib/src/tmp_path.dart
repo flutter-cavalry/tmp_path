@@ -2,11 +2,11 @@ import 'dart:io';
 import 'package:path/path.dart' as p;
 import 'package:uuid/uuid.dart';
 
-var uuid = Uuid();
+final _uuid = Uuid();
 
 /// Returns a temporary file name.
 String tmpFileName() {
-  return '${uuid.v4().replaceAll('-', '')}${DateTime.now().millisecondsSinceEpoch}';
+  return '${_uuid.v4().replaceAll('-', '')}${DateTime.now().millisecondsSinceEpoch}';
 }
 
 /// Returns a temporary path. You can use that to create a temporary file or directory.
