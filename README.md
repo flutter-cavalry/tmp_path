@@ -19,5 +19,8 @@ void main() {
 
   print(tmpPath(parentDirectory: '/a/b/c'));
   // /a/b/c/30937c061c944d059dfc298242ef1e211679847188991
+
+  print(tmpFileName() + '.txt');
+  // 30937c061c944d059dfc298242ef1e211679847188991.txt
 }
 ```
